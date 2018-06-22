@@ -1,0 +1,18 @@
+# 1 install language-pack-zh-hans
+
+# 2 modify and add @ /etc/environment
+
+	LANG="zh_CN.UTF-8"
+	LANGUAGE="zh_CN:zh:en_US:en"
+
+# 3 add @ /var/lib/locales/supported.d/local
+
+	en_US.UTF-8 UTF-8
+	zh_CN.UTF-8 UTF-8
+	zh_CN.GBK GBK
+	zh_CN GB2312
+
+# 4 after save, run
+	sudo locale-gen
+
+# DONE
